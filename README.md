@@ -11,3 +11,5 @@
 
 ⚙️ Enfocado en:
 Desarrolladores y estudiantes que deseen comprender OWL de forma clara, sencilla y con ejemplos aplicables a proyectos en Odoo.
+
+BY: JEMXIAOLONG
