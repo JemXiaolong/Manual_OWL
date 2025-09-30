@@ -1,0 +1,149 @@
+.cards-container {
+    margin-top: 2rem;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+}
+.product-card {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 2.2rem 1rem 1rem 1rem;
+    min-width: 220px;
+    max-width: 260px;
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: visible;
+}
+.stock-badge {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: #3b5998;
+    color: #fff;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+    box-shadow: 0 1px 4px #0002;
+}
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    color: #222;
+    width: 100%;
+    text-align: left;
+}
+.locations-list {
+    width: 100%;
+}
+.location-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.98rem;
+    color: #444;
+    margin-bottom: 0.25rem;
+}
+.location-name {
+    font-weight: 400;
+}
+.location-qty {
+    color: #3b5998;
+    font-weight: 600;
+}
+/* Estilos minimalistas y modernos para el módulo principios_owl */
+.o_principios_owl {
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 2rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.o_principios_owl h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #3b5998;
+    text-align: center;
+}
+.o_principios_owl ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    list-style: disc inside;
+    padding-left: 1.2em;
+    margin-bottom: 2rem;
+}
+.o_principios_owl ul li {
+    background: #f5f6fa;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #222;
+    list-style-type: disc;
+}
+.o_principios_owl h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.o_principios_owl .table-container {
+    overflow-x: auto;
+    max-height: 320px;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px #0001;
+}
+.o_principios_owl table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fafbfc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.o_principios_owl thead tr {
+    background: #f0f2f5;
+}
+.o_principios_owl th {
+    padding: 0.75rem;
+    text-align: left;
+    color: #888;
+    font-weight: 600;
+}
+.o_principios_owl td {
+    padding: 0.5rem 0.75rem;
+    color: #222;
+}
+.o_principios_owl td:last-child {
+    color: #3b5998;
+    font-weight: 600;
+}
+.o_principios_owl tbody tr {
+    border-bottom: 1px solid #eee;
+}

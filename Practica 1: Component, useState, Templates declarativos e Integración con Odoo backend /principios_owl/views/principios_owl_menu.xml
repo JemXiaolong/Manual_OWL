@@ -1,0 +1,9 @@
+<odoo>
+    <record id="action_principios_owl_demo" model="ir.actions.client">
+        <field name="name">Demo Principios OWL</field>
+        <field name="tag">principios_owl.action</field>
+        <field name="target">main</field>
+    </record>
+    <menuitem id="menu_principios_owl_root" name="Principios OWL" sequence="100"/>
+    <menuitem id="menu_principios_owl_demo" name="Demo Principios OWL" parent="menu_principios_owl_root" action="action_principios_owl_demo"/>
+</odoo>

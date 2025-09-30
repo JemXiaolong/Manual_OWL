@@ -1,0 +1,39 @@
+<templates xml:space="preserve">
+    <t t-name="principios_owl.PrincipiosOwlApp">
+        <div class="o_principios_owl">
+            <h2>Principios de OWL/Odoo</h2>
+            <ul>
+                <li>Componentes reactivos</li>
+                <li>Hooks y servicios</li>
+                <li>Templates declarativos</li>
+                <li>Integración con Odoo backend</li>
+            </ul>
+            <div style="display: flex; justify-content: flex-end; margin-bottom: 1rem;">
+                <button type="button" t-on-click="addFakeItem" style="background:#3b5998;color:#fff;border:none;padding:0.5rem 1rem;border-radius:6px;cursor:pointer;">Añadir producto ficticio</button>
+            </div>
+            <h3>Stock disponible</h3>
+            <div class="cards-container">
+                <div class="product-cards">
+                    <t t-foreach="state.products or []" t-as="product" t-key="product.id">
+                        <div class="product-card">
+                            <div class="stock-badge">
+                                <t t-esc="product.total"/>
+                            </div>
+                            <div class="product-name">
+                                <t t-esc="product.name"/>
+                            </div>
+                            <div class="locations-list">
+                                <t t-foreach="product.locations" t-as="loc" t-key="loc.location">
+                                    <div class="location-row">
+                                        <span class="location-name"><t t-esc="loc.location"/></span>
+                                        <span class="location-qty">(<t t-esc="loc.qty"/>)</span>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>
