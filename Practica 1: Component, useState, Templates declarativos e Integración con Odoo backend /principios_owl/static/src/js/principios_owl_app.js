@@ -1,6 +1,4 @@
-/**
- * Principios OWL/Odoo - Ejemplo de componente OWL
- */
+
 import { Component, useState } from '@odoo/owl';
 import { registry } from '@web/core/registry';
 import { useService } from '@web/core/utils/hooks';
